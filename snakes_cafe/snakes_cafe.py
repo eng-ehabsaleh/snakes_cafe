@@ -50,7 +50,7 @@ def handle_print():
 order_list=[]	    
 def handle_order():
 	"""this function will take the user order and will add it to a list and will keep asking the user for the next item until the user type quit also will count how many time the user asked for the same order also if the user type an order not in the list the function will till him to type from the menu and will provide the user of how many time asked for the same order """
-	order=input("> ")
+	order=input("> ").lower()
 	if order != "quit":
 		if order in available_menu:
 			
